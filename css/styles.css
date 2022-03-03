@@ -64,32 +64,66 @@ header .bar-header nav a:hover {
   margin-top: 77px;
   overflow: hidden;
   position: relative;
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
 }
 
-#presentation .title {
+#presentation p {
+  font-size: 1.7em;
+  margin: 30px auto;
+  text-align: center;
+}
+
+
+/*****Projects Styles*****/
+
+#projects {
+  padding-top: 90px;
+  text-align: center;
+}
+
+#projects .title {
   border-bottom: 1px solid rgb(237,237,237);
   margin-bottom: 15px;
   margin-left: 30px;
   margin-right: 30px;
 }
 
-#presentation h3 {
+#projects .articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+#projects h3 {
   font-size: 1.5em;
   margin: 30px auto;
   text-align: left;
 }
 
-#presentation p {
-  font-size: 1.1em;
+#projects h4 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#projects p {
   margin-bottom: 50px;
-  line-height: 1.5em;
-  margin-left: 30px;
-  margin-right: 30px;
+  line-height: 1.2em;
   text-align: left;
 }
 
+#projects li {
+  display: inline;
+}
 
 /*****About Me Styles*****/
+
+#about-me {
+  padding-top: 90px;
+}
 
 #about-me .title {
   border-bottom: 1px solid rgb(237,237,237);
@@ -117,6 +151,7 @@ header .bar-header nav a:hover {
 /*****Contact form Styles*****/
 
 #contact {
+  padding-top: 90px;
   margin: 30px;
 }
 
@@ -184,11 +219,26 @@ text-align: left;
 
 /*****Blog Styles*****/
 
+#blog {
+  padding-top: 90px;
+}
+
 #blog .title {
   border-bottom: 1px solid rgb(237,237,237);
   margin-bottom: 15px;
   margin-left: 30px;
   margin-right: 30px;
+}
+
+#blog .articles {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+} 
+
+#blog li {
+  display: inline;
 }
 
 #blog h3 {
@@ -197,12 +247,14 @@ text-align: left;
   text-align: left;
 }
 
+#blog h4 {
+  margin: 30px auto;
+  text-align: left;
+}
+
 #blog p {
-  font-size: 1.1em;
   margin-bottom: 50px;
   line-height: 1.5em;
-  margin-left: 30px;
-  margin-right: 30px;
   text-align: left;
 }
 
@@ -212,4 +264,31 @@ text-align: left;
 footer {
   background: hsl(234, 80%, 21%);
   padding: 30px;
+  
 }
+
+footer .bar-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer p {
+  margin-left: 0;
+  padding: auto;
+}
+
+footer ul {
+  display: flex;
+  gap: 100px;
+}
+
+
+footer li {
+  display: inline;
+  font-size: 2.5em;
+}
+
+
+
