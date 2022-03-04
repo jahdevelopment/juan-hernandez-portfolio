@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(222, 94%, 26%);
+  font-family: Arial, sans-serif;
+  color: white;
+  }
+
+
+/***** Header Styles *****/
+
+header {
+  background: hsl(234, 80%, 21%);
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+header .bar-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+header .bar-header .main-title {
+  font-stretch: expanded;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+header .bar-header nav {
+  margin-right: 0;
+}
+
+header .bar-header nav li {
+  display: inline;
+  font-size: 1.5em;
+  font-weight: 500 bolder;
+  margin-left: 1em;
+}
+
+header .bar-header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header .bar-header nav a:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #ffff;
+}
+
+
+.project-box {
+  padding-top: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.project-box h1 {
+  padding-bottom: 20px;
+}
+
+.project-box img {
+  width: 450px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.project-box p,
+.project-box li {
+  line-height: 1.5em;
+  font-size: 1.3em;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.project-box button {
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  width: 450px;
+  position: relative;
+  
+}
+
+.project-box button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+
+
+footer {
+  background: hsl(234, 80%, 21%);
+  padding: 30px;
+  
+}
+
+footer .bar-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer p {
+  margin-left: 0;
+  padding: auto;
+}
+
+footer ul {
+  display: flex;
+  gap: 100px;
+}
+
+
+footer li {
+  display: inline;
+  font-size: 2.5em;
+}
+
+
+
