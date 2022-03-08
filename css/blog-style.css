@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(222, 94%, 26%);
+  font-family: Arial, sans-serif;
+  color: white;
+  }
+
+/***** Header Styles *****/
+
+header {
+  background: hsl(234, 80%, 21%);
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+header .bar-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+header .bar-header .main-title {
+  font-stretch: expanded;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+
+header .bar-header nav {
+  margin-right: 0;
+}
+
+header .bar-header nav li {
+  display: inline;
+  font-size: 1.5em;
+  font-weight: 500 bolder;
+  margin-left: 1em;
+}
+
+header .bar-header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header .bar-header nav a:hover {
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #ffff;
+}
+
+/*****Blog Styles*****/
+
+#blog {
+  padding-top: 90px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#blog .title {
+  border-bottom: 1px solid rgb(237,237,237);
+  margin-bottom: 15px;
+  
+}
+
+#blog .articles {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+} 
+
+#blog .articles img {
+  width: 360px;
+  margin-bottom: 20px;
+}
+
+#blog ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#blog li {
+  display: inline;
+}
+
+#blog h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#blog h4 {
+  margin: 30px auto;
+  text-align: left;
+}
+
+#blog p {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+#blog button {
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  width: 300px;
+  text-align: center;
+}
+
+#blog button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+
+/*****Footer Styles*****/
+
+footer {
+  background: hsl(234, 80%, 21%);
+  padding: 30px;
+  
+}
+
+footer .bar-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer p {
+  margin-left: 0;
+  padding: auto;
+}
+
+footer ul {
+  display: flex;
+  gap: 100px;
+}
+
+
+footer li {
+  display: inline;
+  font-size: 2.5em;
+}
+  
+  
+  

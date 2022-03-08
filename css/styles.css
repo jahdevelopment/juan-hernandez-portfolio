@@ -288,21 +288,25 @@ text-align: left;
 
 #blog {
   padding-top: 90px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #blog .title {
   border-bottom: 1px solid rgb(237,237,237);
   margin-bottom: 15px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 #blog .articles {
-  margin: 30px;
   display: flex;
   flex-direction: row;
   gap: 30px;
 } 
+
+#blog .articles img {
+  width: 360px;
+  margin-bottom: 20px;
+}
 
 #blog li {
   display: inline;
@@ -320,9 +324,30 @@ text-align: left;
 }
 
 #blog p {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   line-height: 1.5em;
   text-align: left;
+}
+
+#blog button {
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  width: 300px;
+  text-align: center;
+}
+
+#blog button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid white;
 }
 
 
