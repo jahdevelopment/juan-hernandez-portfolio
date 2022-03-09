@@ -1,0 +1,13 @@
+{
+  "name": "juan-hernandez-personal-portfolio",
+  "scripts": {
+    "build:css": "mkdir -p dist/css && touch dist/css/style.css && cat src/css/*.css >> dist/css/style.css",
+    "build:js": "mkdir -p dist/js && touch dist/js/main.js && cat src/js/*.js >> dist/js/main.js",
+    "copy:html": "cp src/*.html dist",
+    "build:all": "npm run build:css && npm run build:js && npm run copy:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanhernandezdeveloper/juan-hernandez-portfolio.git"
+  }
+}

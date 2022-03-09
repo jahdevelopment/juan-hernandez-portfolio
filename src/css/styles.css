@@ -185,9 +185,15 @@ header .bar-header nav a:hover {
   text-align: left;
 }
 
+#about-me .photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #about-me img {
   margin: 30px 0;
-  width: 600px;
+  width: 580px;
 }
 
 #about-me button {

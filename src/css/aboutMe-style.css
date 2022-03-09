@@ -87,8 +87,9 @@ header .bar-header nav a:hover {
 }
 
 #about-me img {
-  margin: 30px 0;
+  margin: 30px auto;
   width: 600px;
+  text-align: center;
 }
 
 #about-me button {
