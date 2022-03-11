@@ -1,13 +1,32 @@
 {
   "name": "juan-hernandez-personal-portfolio",
   "scripts": {
-    "build:css": "mkdir -p dist/css && touch dist/css/style.css && cat src/css/*.css >> dist/css/style.css",
-    "build:js": "mkdir -p dist/js && touch dist/js/main.js && cat src/js/*.js >> dist/js/main.js",
+    "build:css": "cleancss src/css/*.css -o dist/css/style.css",
+    
     "copy:html": "cp src/*.html dist",
-    "build:all": "npm run build:css && npm run build:js && npm run copy:html"
+    "minify-images": "imagemin src/images/* --out-dir=dist/images",
+    "copy:projects": "cp src/projects/",
+    "build:all": "npm run build:css && npm run copy:html && copy:images && copy:projects"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juanhernandezdeveloper/juan-hernandez-portfolio.git"
-  }
+  },
+  "description": "Juan Alberto Hernandez - Personal Portfolio.",
+  "bugs": {
+    "url": "https://github.com/juanhernandezdeveloper/juan-hernandez-portfolio/issues"
+  },
+  "homepage": "https://github.com/juanhernandezdeveloper/juan-hernandez-portfolio#readme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "rollup": "^2.70.0"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.5.2",
+    "uglify-js": "^3.15.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
