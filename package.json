@@ -2,11 +2,14 @@
   "name": "juan-hernandez-personal-portfolio",
   "scripts": {
     "build:css": "cleancss src/css/*.css -o dist/css/style.css",
-    
+    "build:cssprojects": "cleancss src/projects/styles/*.css -o dist/projects/styles/styles.css",
     "copy:html": "cp src/*.html dist",
+    "copy:html-projects": "cp src/projects/*.html dist/projects",
     "minify-images": "imagemin src/images/* --out-dir=dist/images",
+    "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js",
+    "build:jsprojects": "mkdirp dist/projects/js && uglifyjs src/projects/project-scripts/*./js -o dist/projects/js/script.js",
     "copy:projects": "cp src/projects/",
-    "build:all": "npm run build:css && npm run copy:html && copy:images && copy:projects"
+    "build:all": "npm run build:css && npm run build:cssprojects && npm run copy:html && npm run copy:copy:html-projects && npm run minify-images && npm run build:js && copy:projects"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   },
   "devDependencies": {
     "clean-css-cli": "^5.5.2",
+    "imagemin-cli": "^7.0.0",
     "uglify-js": "^3.15.3"
   },
   "keywords": [],

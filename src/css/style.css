@@ -389,4 +389,170 @@ footer li {
 }
 
 
+.project-box h1 {
+padding-bottom: 20px;
+}
+
+.project-box img {
+width: 450px;
+padding-bottom: 20px;
+text-align: center;
+}
+
+.project-box p,
+.project-box li {
+line-height: 1.5em;
+font-size: 1.3em;
+text-align: left;
+padding-bottom: 20px;
+}
+
+.project-box button {
+background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+border: 0;
+border-radius: 30px;
+color: white;
+font-size: 1em;
+margin-bottom: 2em;
+padding: 1em 1.5em;
+text-transform: uppercase;
+width: 450px;
+position: relative;
+
+}
+
+.project-box button:hover {
+text-decoration: underline;
+cursor: pointer;
+font-weight: bold;
+border: 1px solid white;
+}
+
+
+
+#blog {
+  padding-top: 90px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#blog .title {
+  border-bottom: 1px solid rgb(237,237,237);
+  margin-bottom: 15px;
+  
+}
+
+#blog .articles {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+} 
+
+#blog .articles img {
+  width: 360px;
+  margin-bottom: 20px;
+}
+
+#blog ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#blog li {
+  display: inline;
+}
+
+#blog h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#blog h4 {
+  margin: 30px auto;
+  text-align: left;
+}
+
+#blog p {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+#blog button {
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  width: 300px;
+  text-align: center;
+}
+
+#blog button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+
+#about-me {
+  padding-top: 90px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me .title {
+  border-bottom: 1px solid rgb(237,237,237);
+  margin-bottom: 15px;
+}
+
+#about-me h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#about-me p {
+  font-size: 1.1em;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+#about-me img {
+  margin: 30px auto;
+  width: 600px;
+  text-align: center;
+}
+
+#about-me button {
+  margin-top: 30px;
+  background: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  width: 300px;
+  text-align: center;
+}
+
+#about-me button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
 
