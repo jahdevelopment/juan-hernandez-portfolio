@@ -7,9 +7,10 @@
     "copy:html-projects": "cp src/projects/*.html dist/projects",
     "minify-images": "imagemin src/images/* --out-dir=dist/images",
     "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js",
-    "build:jsprojects": "mkdirp dist/projects/js && uglifyjs src/projects/project-scripts/*./js -o dist/projects/js/script.js",
-    "copy:projects": "cp src/projects/",
-    "build:all": "npm run build:css && npm run build:cssprojects && npm run copy:html && npm run copy:copy:html-projects && npm run minify-images && npm run build:js && copy:projects"
+    "build:jsprojects": "mkdirp dist/projects/js && uglifyjs src/projects/project-scripts/*./js -o dist/projects/project-scripts/script.js",
+    "minify-project-images1": "imagemin src/projects/images/drumKItImg/* --out-dir=dist/projects/images/drumKitImg",
+    "minify-project-images2": "imagemin src/projects/images/pigGameImg/* --out-dir=dist/projects/images/pigGameImg",
+    "build:all": "npm run build:css && npm run build:cssprojects && npm run copy:html && npm run copy:html-projects && npm run minify-images && npm run build:js && npm run build:jsprojects && npm run minify-project-images1 && npm run minify-project-images2" 
   },
   "repository": {
     "type": "git",
