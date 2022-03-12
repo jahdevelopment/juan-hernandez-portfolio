@@ -2,15 +2,21 @@
   "name": "juan-hernandez-personal-portfolio",
   "scripts": {
     "build:css": "cleancss src/css/*.css -o dist/css/style.css",
-    "build:cssprojects": "cleancss src/projects/styles/*.css -o dist/projects/styles/styles.css",
+    "build:css-project-ttt": "cleancss src/projects/TicTacToe/css/style.css -o dist/projects/TicTacToe/css/style.css",
+    "build:css-project-Pig": "cleancss src/projects/pigGame/css/style.css -o dist/projects/pigGame/css/style.css",
+    "build:css-project-Drum": "cleancss src/projects/drumKit/css/style.css -o dist/projects/drumKit/css/style.css",
     "copy:html": "cp src/*.html dist",
-    "copy:html-projects": "cp src/projects/*.html dist/projects",
+    "copy:html-project-ttt": "cp src/projects/TicTacToe/tictactoe.html dist/projects/TicTacToe",
+    "copy:html-project-Pig": "cp src/projects/pigGame/pigGame.html dist/projects/pigGame",
+    "copy:html-project-Drum": "cp src/projects/drumKit/drumKit.html dist/projects/drumKit",
     "minify-images": "imagemin src/images/* --out-dir=dist/images",
     "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js",
-    "build:jsprojects": "mkdirp dist/projects/js && uglifyjs src/projects/project-scripts/*.js -o dist/projects/js/script.js",
-    "minify-project-images1": "imagemin src/projects/images/drumKItImg/* --out-dir=dist/projects/images/drumKitImg",
-    "minify-project-images2": "imagemin src/projects/images/pigGameImg/* --out-dir=dist/projects/images/pigGameImg",
-    "build:all": "npm run build:css && npm run build:cssprojects && npm run copy:html && npm run copy:html-projects && npm run minify-images && npm run build:js && npm run build:jsprojects && npm run minify-project-images1 && npm run minify-project-images2" 
+    "build:js-project-ttt": "mkdirp dist/projects/TicTacToe/js && uglifyjs src/projects/TicTacToe/js/*.js -o dist/projects/TicTacToe/js/script.js",
+    "build:js-project-Pig": "mkdirp dist/projects/pigGame/js && uglifyjs src/projects/pigGame/js/*.js -o dist/projects/pigGame/js/script.js",
+    "build:js-project-Drum": "mkdirp dist/projects/drumKit/js && uglifyjs src/projects/drumKit/js/*.js -o dist/projects/drumKit/js/script.js",
+    "minify-images-project-Pig": "imagemin src/projects/pigGame/pigGameImg/* --out-dir=dist/projects/pigGame/pigGameImg",
+    "minify-project-Drum": "imagemin src/projects/drumKit/images/* --out-dir=dist/projects/drumKit/images",
+    "build:all": "npm run build:css && npm run build:css-project-ttt && npm run build:css-project-Pig && npm run build:css-project-Drum && npm run copy:html && npm run copy:html-project-ttt && npm run copy:html-project-Pig && npm run copy:html-project-Drum && npm run minify-images && npm run build:js && npm run build:js-project-ttt && npm run build:js-project-Pig && npm run build:js-project-Drum"
   },
   "repository": {
     "type": "git",
