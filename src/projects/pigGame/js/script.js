@@ -42,8 +42,8 @@ rollDiceButtonElement.addEventListener("click", (event) => {
     }
   }
 
-  dieImage1Element.src = `images/PigGameimg/dice-${die1Number}.png`;
-  dieImage2Element.src = `images/PigGameimg/dice-${die2Nubmer}.png`;
+  dieImage1Element.src = `PigGameimg/dice-${die1Number}.png`;
+  dieImage2Element.src = `PigGameimg/dice-${die2Nubmer}.png`;
   player1RoundScoreElement.textContent = player1RoundScore;
   player2RoundScoreElement.textContent = player2RoundScore;
 });
@@ -83,8 +83,8 @@ function reset() {
   player1RoundScoreElement.textContent = player1RoundScore;
   player2RoundScoreElement.textContent = player2RoundScore;
 
-  dieImage1Element.src = `images/PigGameimg/dice-1.png`;
-  dieImage2Element.src = `images/PigGameimg/dice-1.png`;
+  dieImage1Element.src = `PigGameimg/dice-1.png`;
+  dieImage2Element.src = `PigGameimg/dice-1.png`;
 
   isPlayer1Turn = true;
   player1Panel.classList.add("active");
