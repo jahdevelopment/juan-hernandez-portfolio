@@ -6,7 +6,7 @@ Juan Alberto Hernandez - Personal Portfolio.
 ## Description
 This is the first version of my personal portfolio created as a final Assignment for the class SD-130 in the program of software Developer in MITT.
 
-The main objective of this web page is to show some of the projects I have been trained on at the moment. But, at first sight, we are just focused on the process of the automation of all the tools into the project. In future versions, we are planning to convert all the project in a more interactive and modern version.
+The main objective of this web page is to show some of the projects I have been trained on at the moment. But, at first sight, we are just focused on the process of the automation of all the tools into the develop of the project. In future versions, we are planning to convert all the portfolio in a more interactive and modern version.
 
 ## Resources
 - HTML
