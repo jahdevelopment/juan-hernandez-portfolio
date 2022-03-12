@@ -6,7 +6,7 @@ Juan Alberto Hernandez - Personal Portfolio.
 ## Description
 This is the first version of my personal portfolio created as a final Assignment for the class SD-130 in the program of software Developer in MITT.
 
-The main objective of this web page is to show some of the projects I have been trained on at the moment. But, at first sight, we are just focused on the process of the automation of all the tools into the develop of the project. In future versions, we are planning to convert all the portfolio in a more interactive and modern version.
+The main objective of this web page is to show some of the projects I have been trained on at the moment. At the moment the design is basic, we are just focused on the process of the automation of all the tools into the develop of the project. In future versions, we are planning to convert all the portfolio in a more interactive and modern version.
 
 ## Resources
 - HTML
@@ -14,7 +14,8 @@ The main objective of this web page is to show some of the projects I have been 
 - JavaScript
 - Git Bash
 - npm package.json
-- cleancss-cli-npm
+- imagemin-cli
+- clean-css-cli-npm
 - uglify-js
 - GitHub 
 - Netlyfy
@@ -30,6 +31,8 @@ The website has a main page which is called Home, inside of this you can find at
 Finally, the project drives the same template of colours, boundaries, margins fonts, buttons, weight, etc. and they are going to be present in the body and styling of the main page and its dependants. The code of this project is written by the author without online templates or boilerplates.
 
 The project is version controlled by commits and it is being conected as a repository of gitHub. The URL is: https://github.com/juanhernandezdeveloper/juan-hernandez-portfolio.git
+
+The last feature inserted is a darkmode button which change the colors of the main page.
 
 The webpage is also hosted in Netlyfy. The URL is: 
 
