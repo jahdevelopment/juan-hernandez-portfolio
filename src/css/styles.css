@@ -1,0 +1,624 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background-color: hsl(222, 94%, 26%);
+  color: #DFF6FF;
+  max-width: 1920px;
+  text-align: center;
+  width: 100%;
+}
+
+.lightmode {
+  background-color: #DFF6FF;
+  color: hsl(234, 80%, 21%);
+}
+
+header {
+  background: hsl(234, 80%, 21%);
+  color: #DFF6FF;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.lightmode1 {
+  background-color: #5D8BF4;
+  color: hsl(234, 80%, 21%);
+}
+
+header label {
+  padding: 10px 30px 10px;
+  display: flex;
+  justify-content: end;
+}
+
+header .bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 30px 20px;
+}
+
+header .bar-header .main-title {
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+}
+
+header .bar-header nav {
+  align-items: right;
+  justify-content: right;
+}
+
+header .bar-header nav li {
+  display: inline;
+  font-size: 0.8em;
+  margin: 0.1em;
+}
+
+header .bar-header nav a {
+  color: #DFF6FF;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+header .bar-header nav a:hover {
+  border-radius: 5px;
+  background-color: hsl(222, 94%, 26%);
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+.check {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 15px;
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+
+input[type="checkbox"]:chequed~.check {
+  background-color: #fff;
+  box-shadow: 0 0 0 1200px linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  ;
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked~.check:before {
+  transform: translateX(50px);
+}
+
+.check:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked~.check:after {
+  transform: translateX(0px);
+}
+
+#presentation {
+  margin-top: 79px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.presentation .bkground {
+  position: relative;
+  width: 100%;
+}
+
+.presentation .my-photo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.presentation p {
+  font-size: 1em;
+  font-weight: 600;
+  color: #DFF6FF;
+  margin: 20px auto;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#projects {
+  padding-top: 80px;
+  text-align: center;
+  margin: 0px 30px 80px;
+}
+
+#projects .samples {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#projects .project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#projects .title {
+  border-bottom: 1px solid #DFF6FF;
+  margin-bottom: 20px;
+}
+
+#projects h1 {
+  margin: 40px auto;
+}
+
+#projects h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#projects h4 {
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#projects .photo-project {
+  height: 240px;
+}
+
+#projects img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#projects p {
+  line-height: 1.5em;
+  text-align: left;
+  padding: 20px 0;
+}
+
+#projects ul {
+  padding-left: 30px;
+}
+
+#projects li {
+  
+  text-align: left;
+  line-height: 1.8em;
+}
+
+#projects button {
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 0.8em;
+  padding: 0.4em 0;
+  text-transform: uppercase;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+#projects button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#about-me {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0px 30px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me .title {
+  border-bottom: 1px solid #DFF6FF;
+  margin-bottom: 40px;
+}
+
+#about-me h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#about-me p {
+  line-height: 1.9em;
+  text-align: left;
+  padding: 20px 0;
+}
+
+#about-me .about-me-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#about-me img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#about-me button {
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  padding: 0.7em 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+#about-me button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#contact {
+  padding-top: 80px;
+  text-align: center;
+  margin: 0px 30px 8px;
+}
+
+#contact .title {
+  border-bottom: 1px solid #DFF6FF;
+  margin-bottom: 20px;
+}
+
+#contact h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#contact p {
+  line-height: 1.2em;
+  text-align: left;
+  padding: 20px 0;
+}
+
+#contact form {
+  margin: 30px auto;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#contact form .form-inputs {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+#contact form span i {
+  color: rgb(190, 190, 190);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#contact form .form-inputs input,
+#contact form .form-inputs textarea {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  color: rgb(190, 190, 190);
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+#contact form .form-inputs a {
+  margin-top: 30px;
+  position: relative;
+  top: 15px;
+}
+
+#contact .button {
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  padding: 0.8em 3em;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+#contact .button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#blog {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0px 30px 80px;
+}
+
+#blog .title {
+  border-bottom: 1px solid #DFF6FF;
+  margin-bottom: 20px;
+}
+
+#blog h3 {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: left;
+}
+
+#blog h4 {
+  margin: 20px auto;
+  text-align: left;
+}
+
+#blog p {
+  line-height: 1.5em;
+  text-align: left;
+  padding: 20px 0;
+}
+
+#blog li {
+  display: inline;
+}
+
+#blog .articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#blog .articles img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#blog button {
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  padding: 0.7em 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 280px;
+  text-align: center;
+}
+
+#blog button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#blog .one-article {
+  background: linear-gradient(109.8deg, rgba(250, 111, 152, 1) 5.6%, rgba(255, 189, 55, 1) 91.5%);
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  padding: 0.7em 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+}
+
+#blog .one-article:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background: hsl(234, 80%, 21%);
+  color: #DFF6FF;
+  width: 100%;
+}
+
+.lightmode2 {
+  background-color: #5D8BF4;
+}
+
+footer .bar-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 30PX;
+  padding: 15px 0;
+}
+
+footer p {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer li {
+  display: inline;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 760px) {
+  .navi-ul {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: hsl(234, 80%, 21%);
+    width: 25%;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+  .navi-ul.active {
+    left: 0;
+    top: 5rem;
+  }
+
+  .nav-item {
+    max-width: 1rem 0;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+    padding: .2rem;
+    margin-right: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  nav li {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav ul a {
+    color: #DFF6FF;
+    font-size: 0.8em;
+    transition: 0.3s;
+  }
+
+  nav li:hover {
+    background-color: hsl(222, 94%, 26%);
+  }
+
+  .project-box,
+  .about-me-photos,
+  .about-me-photos img,
+  .article-box,
+  .social-media {
+    width: 240px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 761px) {
+  nav .icon {
+    display: none;
+  }
+
+  header .bar-header .main-title {
+    font-size: 1.3em;
+  }
+
+  .presentation p {
+    font-size: 1.2em;
+  }
+
+  #projects .samples,
+  #blog .articles,
+  #about-me .about-me-photos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  header .bar-header .main-title {
+    font-size: 1.7em;
+  }
+
+  header .bar-header nav li {
+    font-size: 1em;
+  }
+
+  .presentation .my-photo {
+    max-width: 400px;
+  }
+
+  .presentation p {
+    font-size: 1.5em;
+  }
+
+  #projects,
+  #about-me,
+  #contact,
+  #blog,
+  .social-media {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+
+  #projects .project-box,
+  #blog .article-box {
+    max-width: 250px;
+  }
+
+  #about-me .about-me-photos,
+  .form-inputs {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}

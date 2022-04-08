@@ -1,141 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Hernandez - Personal Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-  <script src="https://kit.fontawesome.com/08aa4b6a62.js" crossorigin="anonymous"></script>
-</head>
-<body class="bluemode">
-  <header class="bluemode1">
-    <div class="bar-header">
-      <h1 class="main-title">Juan Hernandez</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-      </nav>
-      <label>
-        <input id="bdark" type="checkbox">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Hernandez - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/08aa4b6a62.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <label class="light-botton">
+        <input id="blight" type="checkbox" />
         <span class="check"></span>
       </label>
-    </div>
-  </header>
+      <div class="bar-header">
+        <h1 class="main-title">Juan Hernandez</h1>
+        <nav>
+          <a href="#" class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <ul class="navi-ul">
+            <li><a href="index.html" aria-hidden="true">Home</a></li>
+            <li><a href="#projects" aria-hidden="true">Projects</a></li>
+            <li><a href="#about-me" aria-hidden="true">About Me</a></li>
+            <li><a href="#contact" aria-hidden="true">Contact Me</a></li>
+            <li><a href="#blog" aria-hidden="true">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <section id="presentation">
-    <img src="images/Alberto.png" alt="Juan Alberto round border photo">
-    <p>Hello, I´m Juan Hernandez, Software Developer</p>
-  </section>
+    <section id="presentation">
+      <div class="presentation">
+        <img
+          class="bkground"
+          src="images/pikwizard-coffee-writing-computer-blogging.jpg"
+          alt="a computer with some code"
+        />
+        <img
+          class="my-photo"
+          src="images/Alberto.png"
+          alt="Juan Alberto round border photo"
+        />
+        <p>Hello, I'm Juan Hernandez, Software Developer</p>
+      </div>
+    </section>
 
-  <section id="projects">
-    <div class="title">
-      <h3>Projects</h3>
-    </div>
+    <section id="projects">
+      <div class="title">
+        <h3>Projects</h3>
+      </div>
       <ul class="samples">
-        <li>
-          <div class="project-box">
+        <li class="project-box">
+          <div>
             <h4>Tic Tac toe Game</h4>
-            <img src="images/tic-tac-toe-game.jpg" alt="grid of the game in action">  
-            <button onclick="window.location.href='project-ticTacToe.html'">TRY IT</button>
-            <p>Simple game for two players. The goal is to achieve 3 equals in a row, column or diagonal.</p>
+            <div class="photo-project">
+              <img
+                src="images/tic-tac-toe-game.jpg"
+                alt="grid of the game in action"
+              />
+            </div>
+            <button onclick="window.location.href='project-ticTacToe.html'">
+              PLAY
+            </button>
+            <p>
+              Simple game for two players. The goal is to achieve 3 equals in a
+              row, column or diagonal.
+            </p>
           </div>
         </li>
-        <li>
-          <div class="project-box">
+        <li class="project-box">
+          <div>
             <h4>Pig Game</h4>
-            <img src="images/pig-game.jpg" alt="Screenshoot of pig Game">  
-            <button onclick="window.location.href='project-pigGame.html'">TRY IT</button>
+            <div class="photo-project">
+              <img src="images/pig-game.jpg" alt="Screenshoot of pig Game" />
+            </div>
+            <button onclick="window.location.href='project-pigGame.html'">
+              PLAY
+            </button>
             <p>Proof your luck playing the dice, never get the number one.</p>
           </div>
         </li>
-        <li>
-          <div class="project-box">
+        <li class="project-box">
+          <div>
             <h4>Drum Kit Game</h4>
-            <img src="images/drum-kit-game.jpg" alt="Partial screenshot of the drum kit">  
-            <button onclick="window.location.href='project-drumKit.html'">TRY IT</button>
-            <p>Do you like the drum? come on and try to invent your own rhythm!</p>
+            <div class="photo-project">
+              <img
+                src="images/drum-kit-game.jpg"
+                alt="Partial screenshot of the drum kit"
+              />
+            </div>
+            <button onclick="window.location.href='project-drumKit.html'">
+              PLAY
+            </button>
+            <p>
+              Do you like the drum? come on and try to invent your own rhythm!
+            </p>
           </div>
         </li>
       </ul>
-  </section>
+    </section>
 
-  <section id="about-me">
-    <div class="title">
-      <h3>About Me</h3>
-    </div>
-    <p>My name is Juan Alberto Hernandez. Born and grew up in Tunja, a small city near Bogotá Colombia. Living in Winnipeg since December of 2021, came with my family that is compound of my wife and my 2 years old son called salomón. I am a Mechanical Engineer, with more than 8 years of expertise managing teams of workers in the industry of construction and also leading sales groups in the commercial fields. I have got a Master’s in business administration.</p>
-    <div class="photos">
-      <img src="images/Juan-in-family.jpg" alt="Juan´s family">
-      <img src="images/The-whole-family.jpg" alt="Juan´s family again">
-    </div>
-    <button onclick="window.location.href='aboutme.html'">CONTINUE READING</button>
-  </section>
-
-  <section id="contact">
-    <div class="title">
-      <h3>Contact Me</h3>
-    </div>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="">
-      <div class="form-inputs">
-        <span id="icon">
-          <i class="fas fa-address-card"></i>
-        </span>
-        <input type="Name" placeholder="Name">
-        <input type="Email" placeholder="Email">
-        <input type="Subject" placeholder="Subjet">
-        <input type="Comment" placeholder="Comment">
-        <div class="button">SEND MESSAGE</div>
+    <section id="about-me">
+      <div class="title">
+        <h3>About Me</h3>
       </div>
-    </form>
-  </section>
+      <div class="about-me-resume">
+        <p>
+          My name is Juan Alberto Hernandez. Born and grew up in Tunja, a small
+          city near Bogotá Colombia. Living in Winnipeg since December of 2021,
+          came with my family that is compound of my wife and my 2 years old son
+          called salomón. I am a Mechanical Engineer, with more than 8 years of
+          expertise managing teams of workers in the industry of construction
+          and also leading sales groups in the commercial fields. I have got a
+          Master's in business administration.
+        </p>
+        <div class="about-me-photos">
+          <div class="family-photo">
+            <img src="images/Juan-in-family.jpg" alt="Juan's family" />
+          </div>
+          <div class="family-photo">
+            <img src="images/The-whole-family.jpg" alt="Juan's family again" />
+          </div>
+        </div>
+        <button onclick="window.location.href='aboutme.html'">
+          CONTINUE READING
+        </button>
+      </div>
+    </section>
 
-  <section id="blog">
-    <div class="title">
-      <h3>Blog</h3>
-    </div>
-    <ul class="articles">
-      <li>
-        <div>
-          <h4>Lorem, ipsum dolor.</h4>
-          <img src="images/pikwizard-coffee-writing-computer-blogging.jpg" alt="Image of a computer displaying some code">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi iure odio impedit qui aperiam voluptatem exercitationem dignissimos similique, illum consectetur vel iusto iste harum modi?</p>
+    <section id="contact">
+      <div class="title">
+        <h3>Contact Me</h3>
+      </div>
+      <p>Lets get in touch and talk about your next project.</p>
+      <form action="#">
+        <div class="form-inputs">
+          <span id="icon">
+            <i class="fas fa-address-card"></i>
+          </span>
+          <input id="name" type="Name" placeholder="Name" />
+          <input id="email" type="Email" placeholder="Email" />
+          <input id="subject" type="Subject" placeholder="Subjet" />
+          <textarea
+            name="message"
+            id="message"
+            cols="76"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <a id="send-email" class="button" href="mailto:jualherac@gmail.com"
+            >SEND MESSAGE</a
+          >
         </div>
-      </li>
-      <li>
-        <div>
-          <h4>Lorem, ipsum dolor.</h4>
-          <img src="images/pikwizard-coffee-writing-computer-blogging.jpg" alt="Image of a computer displaying some code">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi iure odio impedit qui aperiam voluptatem exercitationem dignissimos similique, illum consectetur vel iusto iste harum modi?</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h4>Lorem, ipsum dolor.</h4>
-          <img src="images/pikwizard-coffee-writing-computer-blogging.jpg" alt="Image of a computer displaying some code">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi iure odio impedit qui aperiam voluptatem exercitationem dignissimos similique, illum consectetur vel iusto iste harum modi?</p>
-        </div>
-      </li>
-    </ul>
-    <button onclick="window.location.href='blog.html'">TO SEE MORE ARTICLES</button>
-  </section>
-  
-  <footer>
-    <div class="bar-footer">
-      <p>&#174; 2022 Juan Alberto Hernandez.</p>
-      <ul class="social-media">
-        <li><i class="fa-brands fa-linkedin"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
+      </form>
+    </section>
+
+    <section id="blog">
+      <div class="title">
+        <h3>Blog</h3>
+      </div>
+      <ul class="articles">
+        <li>
+          <div class="article-box">
+            <h4>Lorem, ipsum dolor.</h4>
+            <img
+              src="images/pikwizard-coffee-writing-computer-blogging.jpg"
+              alt="Image of a computer displaying some code"
+            />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              iure odio impedit qui aperiam voluptatem exercitationem
+              dignissimos similique, illum consectetur vel iusto iste harum
+              modi?
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="article-box">
+            <h4>Lorem, ipsum dolor.</h4>
+            <img
+              src="images/pikwizard-coffee-writing-computer-blogging.jpg"
+              alt="Image of a computer displaying some code"
+            />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              iure odio impedit qui aperiam voluptatem exercitationem
+              dignissimos similique, illum consectetur vel iusto iste harum
+              modi?
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="article-box">
+            <h4>Lorem, ipsum dolor.</h4>
+            <img
+              src="images/pikwizard-coffee-writing-computer-blogging.jpg"
+              alt="Image of a computer displaying some code"
+            />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+              iure odio impedit qui aperiam voluptatem exercitationem
+              dignissimos similique, illum consectetur vel iusto iste harum
+              modi?
+            </p>
+          </div>
+        </li>
       </ul>
-    </div>
-  </footer>
-</body>
+      <button onclick="window.location.href='blog.html'">
+        TO SEE MORE ARTICLES
+      </button>
+    </section>
+
+    <footer>
+      <div class="bar-footer">
+        <ul class="social-media">
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+        <p>&#174; 2022 Juan Alberto Hernandez.</p>
+      </div>
+    </footer>
+  </body>
 </html>
