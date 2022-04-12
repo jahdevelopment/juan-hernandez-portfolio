@@ -1,7 +1,7 @@
 {
   "name": "juan-hernandez-personal-portfolio",
   "scripts": {
-    "build:css": "cleancss src/css/*.css -o dist/css/style.css",
+    "build:css": "cleancss src/css/*.css -o dist/css/styles.css",
     "build:css-project-ttt": "cleancss src/projects/TicTacToe/css/style.css -o dist/projects/TicTacToe/css/style.css",
     "build:css-project-Pig": "cleancss src/projects/pigGame/css/style.css -o dist/projects/pigGame/css/style.css",
     "build:css-project-Drum": "cleancss src/projects/drumKit/css/style.css -o dist/projects/drumKit/css/style.css",
@@ -10,7 +10,7 @@
     "copy:html-project-Pig": "cp src/projects/pigGame/pigGame.html dist/projects/pigGame",
     "copy:html-project-Drum": "cp src/projects/drumKit/drumKit.html dist/projects/drumKit",
     "minify-images": "imagemin src/images/* --out-dir=dist/images",
-    "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js",
+    "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/script.js",
     "build:js-project-ttt": "mkdirp dist/projects/TicTacToe/js && uglifyjs src/projects/TicTacToe/js/*.js -o dist/projects/TicTacToe/js/script.js",
     "build:js-project-Pig": "mkdirp dist/projects/pigGame/js && uglifyjs src/projects/pigGame/js/*.js -o dist/projects/pigGame/js/script.js",
     "build:js-project-Drum": "mkdirp dist/projects/drumKit/js && uglifyjs src/projects/drumKit/js/*.js -o dist/projects/drumKit/js/script.js",

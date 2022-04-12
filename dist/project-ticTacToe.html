@@ -5,16 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Hernandez - Personal Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
   <script src="https://kit.fontawesome.com/08aa4b6a62.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
+    <label class="light-botton">
+      <input id="blight" type="checkbox" />
+      <span class="check"></span>
+    </label>
     <div class="bar-header">
       <h1 class="main-title">Juan Hernandez</h1>
       <nav>
-        <ul>
+        <a href="#" class="icon">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <ul class="navi-ul">
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#projects">Projects</a></li>
           <li><a href="index.html#about-me">About Me</a></li>
@@ -25,7 +32,7 @@
     </div>
   </header>
 
-  <div class="project-box">
+  <div id="projects">
     <h1>Tic Tac toe Game</h1>
     <img src="images/tic-tac-toe-game.jpg" alt="grid of the game in action">  
     <p>Tic-tac-toe is a game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players.</p>
@@ -37,12 +44,12 @@
   
   <footer>
     <div class="bar-footer">
-      <p>&#174; 2022 Juan Alberto Hernandez.</p>
       <ul class="social-media">
         <li><i class="fa-brands fa-linkedin"></i></li>
         <li><i class="fa-brands fa-twitter"></i></li>
         <li><i class="fa-brands fa-instagram"></i></li>
       </ul>
+      <p>&#174; 2022 Juan Alberto Hernandez.</p>
     </div>
   </footer>
 </body>
