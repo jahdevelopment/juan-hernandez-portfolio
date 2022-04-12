@@ -15,8 +15,8 @@
     "build:js-project-Pig": "mkdirp dist/projects/pigGame/js && uglifyjs src/projects/pigGame/js/*.js -o dist/projects/pigGame/js/script.js",
     "build:js-project-Drum": "mkdirp dist/projects/drumKit/js && uglifyjs src/projects/drumKit/js/*.js -o dist/projects/drumKit/js/script.js",
     "minify-images-project-Pig": "imagemin src/projects/pigGame/pigGameImg/* --out-dir=dist/projects/pigGame/pigGameImg",
-    "minify-project-Drum": "imagemin src/projects/drumKit/images/* --out-dir=dist/projects/drumKit/images",
-    "build:all": "npm run build:css && npm run build:css-project-ttt && npm run build:css-project-Pig && npm run build:css-project-Drum && npm run copy:html && npm run copy:html-project-ttt && npm run copy:html-project-Pig && npm run copy:html-project-Drum && npm run minify-images && npm run build:js && npm run build:js-project-ttt && npm run build:js-project-Pig && npm run build:js-project-Drum"
+    "minify-images-project-Drum": "imagemin src/projects/drumKit/images/* --out-dir=dist/projects/drumKit/images",
+    "build:all": "npm run build:css && npm run build:css-project-ttt && npm run build:css-project-Pig && npm run build:css-project-Drum && npm run copy:html && npm run copy:html-project-ttt && npm run copy:html-project-Pig && npm run copy:html-project-Drum && npm run minify-images && npm run build:js && npm run build:js-project-ttt && npm run build:js-project-Pig && npm run build:js-project-Drum && npm run minify-images-project-Pig && npm run minify-images-project-Drum"
   },
   "repository": {
     "type": "git",
