@@ -402,6 +402,7 @@ input[type="checkbox"]:checked~.check:after {
 
 #blog h5 {
   text-align: left;
+  padding-bottom: 30px;
 }
 
 #blog p {
@@ -532,11 +533,16 @@ footer ul {
   padding: 10px 0;
   margin: 0 auto;
   width: 100%;
-}
+  }
 
 footer li {
   display: inline;
   font-size: 1.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #DFF6FF;
 }
 
 @media only screen and (max-width: 760px) {
