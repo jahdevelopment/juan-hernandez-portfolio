@@ -36,7 +36,7 @@ Finally, the project drives the same template of colours, boundaries, margins fo
 
 The project is version controlled by commits and it is being conected as a repository of gitHub. The URL is: https://github.com/juanhernandezdeveloper/juan-hernandez-portfolio.git
 
-The webpage is also hosted in Netlyfy.
+The webpage is also hosted in Netlyfy. Tht URL is: https://polite-babka-cb6ea8.netlify.app/
 
 ## Website Instructions
 

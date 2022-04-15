@@ -222,8 +222,10 @@ input[type="checkbox"]:checked~.check:after {
   padding: 20px 0;
 }
 
-#projects li {
-  display: inline;
+#projects .project-list {
+  padding-left: 25px;
+  text-align: left;
+  list-style: circle;
 }
 
 #projects button {
